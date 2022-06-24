@@ -13,17 +13,17 @@ public class PalindromeString {
     public boolean isPalindrome(String s) {
         boolean palindrome = true;
         int i = 0;
-        //Filter string to only letters and numbers
+        //  Filter string to only letters and numbers
         String filteredS = s.toLowerCase().replaceAll("[^a-z0-9]", "");
 
-        //Check for single charater or no characters
+        //  Check for single charater or no characters
         if(filteredS.length() <= 1) {
             return palindrome;
         }
 
-        //Start loop of provided string | stop at half point
+        //  Start loop of provided string | stop at half point
         while(i < filteredS.length() / 2 ) {
-            //Check if the letter/number opposite the current index is a match
+            //  Check if the letter/number opposite the current index is a match
             if(filteredS.charAt(i) != filteredS.charAt(filteredS.length() - i - 1)) {
                 palindrome = false;
                 break;

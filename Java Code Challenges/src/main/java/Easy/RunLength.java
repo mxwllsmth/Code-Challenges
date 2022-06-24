@@ -9,15 +9,15 @@ public class RunLength {
 
         String condensedString = "";
         int count;
-        //Start loop of provided string
+        //  Start loop of provided string
         for (int i = 0; i < str.length(); i++) {
             count = 1;
-            //Start inner loop to track repeating characters from current index
+            //  Start inner loop to track repeating characters from current index
             while (i < str.length() - 1 && (str.charAt(i) == str.charAt(i + 1))) {
                 i++;
                 count++;
             }
-            //Format
+            //  Format
             condensedString += String.valueOf(count) + str.charAt(i);
         }
         return condensedString;

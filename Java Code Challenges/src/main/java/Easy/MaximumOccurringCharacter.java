@@ -15,19 +15,19 @@ public class MaximumOccurringCharacter {
         int highCount = 0;
         int count = 0;
 
-        //Start outer loop of input string
+        //  Start outer loop of input string
         for(int i = 0; i < text.length() - 1; i++) {
 
             count = 0;
-            //Start inner loop of input string
+            //  Start inner loop of input string
             for(int x = 0; x < text.length() - 1; x++) {
-                //Check each character in the inner loop for a match with the character at the current index of the outer loop
+                //  Check each character in the inner loop for a match with the character at the current index of the outer loop
                 if(text.charAt(x) == text.charAt(i)) {
                     count++;
                 }
 
             }
-            //Check if character is the most occurring
+            //  Check if character is the most occurring
             if(count > highCount) {
                 highCount = count;
                 mostOccurring = text.charAt(i);

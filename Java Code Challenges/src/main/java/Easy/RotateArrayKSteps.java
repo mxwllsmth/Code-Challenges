@@ -12,19 +12,19 @@ public class RotateArrayKSteps {
 
         int[] rotated = new int[input.length];
 
-        //Reduce steps when over input length to reduce full cycles
+        //  Reduce steps when over input length to reduce full cycles
         if(steps > input.length) {
             steps = steps % input.length;
         }
-        //Loop over input array for number of steps
+        //  Loop over input array for number of steps
         for (int i = 0; i < steps; i++) {
             rotated[i] = input[input.length - (steps - i)];
         }
-        //Loop over input array for length minus steps
+        //  Loop over input array for length minus steps
         for (int i = 0; i < input.length - steps; i++) {
             rotated[steps + i] = input[i];
         }
-        //Loop over input array and chage each index to match the rotated array
+        //  Loop over input array and chage each index to match the rotated array
         for (int i = 0; i < input.length; i++) {
             input[i] = rotated[i];
         }

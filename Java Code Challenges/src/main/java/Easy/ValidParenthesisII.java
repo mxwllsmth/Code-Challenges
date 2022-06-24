@@ -14,22 +14,22 @@ public class ValidParenthesisII {
     public static boolean validParenthesis(String s) {
 
         Stack<Character> leftParenthesis = new Stack<>();
-        //Start loop
+        //  Start loop
         for(char current : s.toCharArray()) {
-            //Handle left parenthesis
+            //  Handle left parenthesis
             if(current == '[' || current == '{' || current == '(') {
                 leftParenthesis.push(current);
-                //Handle right parenthesis
+                //  Handle right parenthesis
             } else if((!leftParenthesis.isEmpty() && current == ']' && leftParenthesis.peek() == '[')  ||
                     (!leftParenthesis.isEmpty() && current == '}' && leftParenthesis.peek() == '{') ||
                     (!leftParenthesis.isEmpty() && current == ')' && leftParenthesis.peek() == '(')) {
                 leftParenthesis.pop();
             } else {
-                //Return false when no cases are a match
+                //  Return false when no cases are a match
                 return false;
             }
         }
-        //Check if stack created is empty
+        //  Check if stack created is empty
         return leftParenthesis.isEmpty();
     }
 }

@@ -10,11 +10,11 @@ public class TwoSum {
     public static int[] twoSum(int[] nums, int target) {
 
         int[] ans = new int[]{0,0};
-        //Start loop of input array
+        //  Start loop of input array
         for(int i = 0 ; i < nums.length - 1 ; i++) {
-            //Start inner loop of input array from one index past outer loop
+            //  Start inner loop of input array from one index past outer loop
             for(int x = i + 1 ; x < nums.length; x++) {
-                //Check if nums add to target
+                //  Check if nums add to target
                 if (nums[i] + nums[x] == target) {
                     ans[0] = i;
                     ans[1] = x;

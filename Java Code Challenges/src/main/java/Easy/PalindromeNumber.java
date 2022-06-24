@@ -15,9 +15,9 @@ public class PalindromeNumber {
         String newNum = String.valueOf(x);
         int i = 0;
 
-        //Start loop of provided integer through | stop at half point
+        //  Start loop of provided integer | stop at half point
         while(i <= newNum.length() / 2 ) {
-            //Check if the number opposite the current index is a match
+            //  Check if the number opposite the current index is a match
             if(newNum.charAt(i) != newNum.charAt(newNum.length() - i - 1)) {
                 palindrome = false;
                 break;

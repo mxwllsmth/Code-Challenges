@@ -13,22 +13,22 @@ public class LongestNonRepeating {
         String output = "";
         String possible = "";
 
-        //Start loop over provided string
+        //  Start loop over provided string
         for (int i = 0; i < inputStr.length() - 1; i++) {
-            //Check if the possible longest string contains the char at the current index
+            //  Check if the possible longest string contains the char at the current index
             if (!possible.contains(String.valueOf(inputStr.charAt(i)))) {
                 possible += String.valueOf(inputStr.charAt(i));
-                //Starts loop from current index and resets possible output
+                //  Starts loop from current index and resets possible output
             } else {
                 i--;
                 possible = "";
             }
-            //Checks if the possible output is longer than the current output
+            //  Checks if the possible output is longer than the current output
             if (possible.length() > output.length()) {
                 output = possible;
             }
         }
-        //Format
+        //  Format
         output += " : " + output.length();
 
         return output;
