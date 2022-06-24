@@ -1,6 +1,14 @@
 package Easy;
 
 public class BestTimeToBuyAndSellStock {
+
+    /*
+    Best Time To Buy And Sell Stock- Takes in an integer array representing costs/prices on days of the week -
+    [1,5,2,9,3,6,2] ==> ($1 Mon, $5 Tue, $2 Wed, ...)
+    Determines the best time to buy and sell stock throughout the week for the greatest profit
+    Return the greatest profit that can be made
+    */
+
     public int maxProfit(int[] prices) {
         //  Set initial profit to 0
         int profit = 0;

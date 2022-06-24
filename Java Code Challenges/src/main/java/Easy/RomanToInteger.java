@@ -1,10 +1,12 @@
 package Easy;
 
 public class RomanToInteger {
+
     /*
     Roman To Integer - Takes in a roman numeral and converts it to an int
     Should be able to take in roman numerals I, V, X, L, C, D, and M
      */
+
     public static int romanToInt(String roman) {
         int sum = 0;
         //  Start loop of provided string

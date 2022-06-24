@@ -1,6 +1,7 @@
 package Easy;
 
 public class PalindromeNumber {
+
     /*
     Palindrome Number - Takes in a number and checks to see if that number is a palindrome (the same forwards as backwards) -
     Return true or false -
@@ -9,6 +10,7 @@ public class PalindromeNumber {
     (-12321) ==> false
     (123321) ==> true
     */
+
     public static boolean isPalindrome(int x) {
 
         boolean palindrome = true;

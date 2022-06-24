@@ -3,6 +3,7 @@ package Easy;
 import java.util.Stack;
 
 public class ValidParenthesisII {
+
     /*
     Valid Parenthesis II - Takes in a string of parenthesis including {} [] () and returns boolean for validity -
     Return true when valid and false when invalid -
@@ -11,6 +12,7 @@ public class ValidParenthesisII {
     "{}[)" ==> false
     "()}" ==> false
     */
+
     public static boolean validParenthesis(String s) {
 
         Stack<Character> leftParenthesis = new Stack<>();

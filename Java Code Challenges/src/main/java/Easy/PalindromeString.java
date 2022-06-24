@@ -1,6 +1,7 @@
 package Easy;
 
 public class PalindromeString {
+
     /*
     Valid Palindrome - Takes in a string and checks to see if it a valid palindrome -
     - palindrome is defined as the string being the same forward and backward while only considering alphanumeric characters (ignoring case) -
@@ -10,6 +11,7 @@ public class PalindromeString {
     "taco : cat" ==> True
     "Taco0cat" ==> False
     */
+
     public boolean isPalindrome(String s) {
         boolean palindrome = true;
         int i = 0;

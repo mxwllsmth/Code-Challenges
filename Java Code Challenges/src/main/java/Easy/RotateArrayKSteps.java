@@ -1,6 +1,7 @@
 package Easy;
 
 public class RotateArrayKSteps {
+
     /*
     Rotate Array - Takes in a number of steps and an array and rotates the array to the right by the number of steps -
     Return the rotated array -
@@ -8,6 +9,7 @@ public class RotateArrayKSteps {
     [1,2], steps = 3 ==> [2, 1]
     [-1], steps = 2 ==> [-1]
     */
+
     public static void rotateArray(int[] input, int steps) {
 
         int[] rotated = new int[input.length];

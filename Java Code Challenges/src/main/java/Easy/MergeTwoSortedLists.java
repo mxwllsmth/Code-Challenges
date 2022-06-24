@@ -7,6 +7,7 @@ public class MergeTwoSortedLists {
     Return the merged linked list from the first node -
     [1,2,4], [1,3,4] ==> [1,1,2,3,4,4]
     */
+
     public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         //  Create new list node
         ListNode result = new ListNode();

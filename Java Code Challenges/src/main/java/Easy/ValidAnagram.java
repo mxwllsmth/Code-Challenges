@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ValidAnagram {
+
     /*
     Valid Anagram - Takes in two strings and checks to see if the letters of one string can be used to write the other -
     - Each letter must be used once -
@@ -13,6 +14,7 @@ public class ValidAnagram {
     "hola" "halo" = true
     "try" "tryy" = false
     */
+
     public static boolean isAnagram(String s, String t) {
 
         //  Check for differing lengths

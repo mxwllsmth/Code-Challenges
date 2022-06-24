@@ -1,6 +1,7 @@
 package Easy;
 
 public class LongestNonRepeating {
+
     /*
     Longest Non-Repeating SubString - Takes in a string and finds the longest sub-string without a repeating character -
     Return the substring found and its length (if multiple substrings of the same length exist, the first will be returned) -
@@ -9,6 +10,7 @@ public class LongestNonRepeating {
     "" = "" : 0
     pwwketw = wket : 3
     */
+
     public static String longestSubstring(String inputStr) {
         String output = "";
         String possible = "";

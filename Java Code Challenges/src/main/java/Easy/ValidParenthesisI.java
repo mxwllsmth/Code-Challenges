@@ -1,6 +1,7 @@
 package Easy;
 
 public class ValidParenthesisI {
+
     /*
     Valid Parenthesis I - Takes in a string of parenthesis and checks to see if the parenthesis are balanced (valid) -
     Return true or false -
@@ -10,6 +11,7 @@ public class ValidParenthesisI {
     )( = false
     ((()) = false
     */
+
     public static Boolean balanced(String stringArg) {
         int counter = 0;
         boolean balanced = true;

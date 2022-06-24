@@ -1,10 +1,12 @@
 package Easy;
 
 public class RunLength {
+
     /*
     Run Length - take a string and condense it into the number of times a character repeats
     in a row - input "aabbcde" should return "2a2b1c1d1e"
      */
+
     public static String runLength(String str) {
 
         String condensedString = "";

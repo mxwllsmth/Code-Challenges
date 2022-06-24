@@ -1,6 +1,7 @@
 package Easy;
 
 public class MaximumOccurringCharacter {
+
     /*
     Maximum Occurring Character - Takes in a string and finds the character that appears the most (ties are settles by which character appeared first) -
     Return the character -
@@ -9,6 +10,7 @@ public class MaximumOccurringCharacter {
     (helloworld) ==> l
     (46628944428) ==> 4
     */
+
     public static char maximumOccurringCharacter(String text) {
 
         char mostOccurring = text.charAt(0);

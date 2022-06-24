@@ -3,6 +3,12 @@ package Easy;
 import com.sun.source.tree.Tree;
 
 public class InvertBinaryTree {
+
+    /*
+    Invert Binary Tree - Takes in a binary tree and inverts it (swap sibling nodes at all levels) -
+    Return the inverted binary tree
+     */
+
     public static TreeNode invertTree(TreeNode root) {
         //  Check if root is null
         if(root == null) {
