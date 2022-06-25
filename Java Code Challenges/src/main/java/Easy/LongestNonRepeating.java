@@ -11,7 +11,9 @@ public class LongestNonRepeating {
     pwwketw = wket : 3
     */
 
-    public static String longestSubstring(String inputStr) {
+    //  Tested in Easy Tests folder
+
+    public String longestSubstring(String inputStr) {
         String output = "";
         String possible = "";
 

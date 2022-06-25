@@ -9,7 +9,9 @@ public class TwoSum {
     int[]{4,4,5}, 8 ==> int[]{0,1}
     */
 
-    public static int[] twoSum(int[] nums, int target) {
+    //  Tested in Easy Tests folder
+
+    public int[] twoSum(int[] nums, int target) {
 
         int[] ans = new int[]{0,0};
         //  Start loop of input array

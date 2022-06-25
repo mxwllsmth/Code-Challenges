@@ -12,6 +12,8 @@ public class PalindromeString {
     "Taco0cat" ==> False
     */
 
+    //  Tested in Easy Tests folder
+
     public boolean isPalindrome(String s) {
         boolean palindrome = true;
         int i = 0;

@@ -9,7 +9,9 @@ public class BinarySearch {
     Return the index of the target integer if it exists, or -1 if it does not
      */
 
-    public static int search(int[] nums, int target) {
+    //  Tested in Easy Tests folder
+
+    public int search(int[] nums, int target) {
 
         for(int i = 0 ; i < nums.length ; i++) {
             if(nums[i] == target) {

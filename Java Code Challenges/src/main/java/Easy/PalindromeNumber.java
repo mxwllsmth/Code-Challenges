@@ -11,7 +11,9 @@ public class PalindromeNumber {
     (123321) ==> true
     */
 
-    public static boolean isPalindrome(int x) {
+    //  Tested in Easy Tests folder
+
+    public boolean isPalindrome(int x) {
 
         boolean palindrome = true;
         String newNum = String.valueOf(x);

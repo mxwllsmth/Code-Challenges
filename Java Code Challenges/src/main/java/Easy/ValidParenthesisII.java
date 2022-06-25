@@ -13,7 +13,9 @@ public class ValidParenthesisII {
     "()}" ==> false
     */
 
-    public static boolean validParenthesis(String s) {
+    //  Tested in Easy Tests folder
+
+    public boolean validParenthesis(String s) {
 
         Stack<Character> leftParenthesis = new Stack<>();
         //  Start loop

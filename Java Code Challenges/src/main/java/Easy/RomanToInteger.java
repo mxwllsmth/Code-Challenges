@@ -7,7 +7,9 @@ public class RomanToInteger {
     Should be able to take in roman numerals I, V, X, L, C, D, and M
      */
 
-    public static int romanToInt(String roman) {
+    //  Tested in Easy Tests folder
+
+    public  int romanToInt(String roman) {
         int sum = 0;
         //  Start loop of provided string
         for (int i = 0; i < roman.length(); i++) {

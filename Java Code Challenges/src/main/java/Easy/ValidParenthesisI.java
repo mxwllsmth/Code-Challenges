@@ -12,7 +12,9 @@ public class ValidParenthesisI {
     ((()) = false
     */
 
-    public static Boolean balanced(String stringArg) {
+    //  Tested in Easy Tests folder
+
+    public Boolean balanced(String stringArg) {
         int counter = 0;
         boolean balanced = true;
         //  Start Loop

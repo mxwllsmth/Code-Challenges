@@ -7,7 +7,9 @@ public class RunLength {
     in a row - input "aabbcde" should return "2a2b1c1d1e"
      */
 
-    public static String runLength(String str) {
+    //  Tested in Easy Tests folder
+
+    public String runLength(String str) {
 
         String condensedString = "";
         int count;

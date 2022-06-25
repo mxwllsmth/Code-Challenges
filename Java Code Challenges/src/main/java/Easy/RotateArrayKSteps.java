@@ -10,7 +10,9 @@ public class RotateArrayKSteps {
     [-1], steps = 2 ==> [-1]
     */
 
-    public static void rotateArray(int[] input, int steps) {
+    //  Tested in Easy Tests folder
+
+    public int[] rotateArray(int[] input, int steps) {
 
         int[] rotated = new int[input.length];
 
@@ -30,5 +32,7 @@ public class RotateArrayKSteps {
         for (int i = 0; i < input.length; i++) {
             input[i] = rotated[i];
         }
+        return input;
     }
+
 }

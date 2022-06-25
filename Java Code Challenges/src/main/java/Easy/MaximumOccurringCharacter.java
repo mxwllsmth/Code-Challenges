@@ -11,7 +11,9 @@ public class MaximumOccurringCharacter {
     (46628944428) ==> 4
     */
 
-    public static char maximumOccurringCharacter(String text) {
+    //  Tested in Easy Tests folder
+
+    public char maximumOccurringCharacter(String text) {
 
         char mostOccurring = text.charAt(0);
         int highCount = 0;

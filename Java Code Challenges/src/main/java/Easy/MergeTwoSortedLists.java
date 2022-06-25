@@ -8,7 +8,9 @@ public class MergeTwoSortedLists {
     [1,2,4], [1,3,4] ==> [1,1,2,3,4,4]
     */
 
-    public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+    //  Not tested in Easy Tests folder ~ try it in Leetcode
+
+    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         //  Create new list node
         ListNode result = new ListNode();
         //  Create pointer to first node in list
@@ -56,6 +58,6 @@ public class MergeTwoSortedLists {
         ListNode next;
         ListNode() {}
         ListNode(int val) { this.val = val; }
-        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+        public ListNode(int val, ListNode next) { this.val = val; this.next = next; }
     }
 }

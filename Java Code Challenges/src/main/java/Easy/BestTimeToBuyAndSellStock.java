@@ -9,6 +9,8 @@ public class BestTimeToBuyAndSellStock {
     Return the greatest profit that can be made
     */
 
+    //  Tested in Easy Tests folder
+
     public int maxProfit(int[] prices) {
         //  Set initial profit to 0
         int profit = 0;

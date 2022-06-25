@@ -15,7 +15,9 @@ public class ValidAnagram {
     "try" "tryy" = false
     */
 
-    public static boolean isAnagram(String s, String t) {
+    //  Tested in Easy Tests folder
+
+    public boolean isAnagram(String s, String t) {
 
         //  Check for differing lengths
         if(s.length() != t.length()) {

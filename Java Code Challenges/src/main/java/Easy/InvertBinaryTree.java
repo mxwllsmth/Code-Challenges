@@ -9,6 +9,8 @@ public class InvertBinaryTree {
     Return the inverted binary tree
      */
 
+    //  Not tested in Easy Tests folder ~ try it in Leetcode
+
     public static TreeNode invertTree(TreeNode root) {
         //  Check if root is null
         if(root == null) {

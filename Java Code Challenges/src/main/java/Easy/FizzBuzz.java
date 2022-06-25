@@ -10,7 +10,9 @@ public class FizzBuzz {
     Return the int if not divisible by 3 or 5, "Fizz" if the int is divisible by 3, "Buzz" if by 5, and "FizzBuzz" if by 3 and 5
      */
 
-    public static List<String> fizzBuzz(int[] numsArr) {
+    //  Tested in Easy Tests folder
+
+    public List<String> fizzBuzz(int[] numsArr) {
         List<String> stringLi = new ArrayList<>();
         //  Start loop of provided array
         for (int num : numsArr) {
