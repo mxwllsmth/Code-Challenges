@@ -1,6 +1,7 @@
 package Hard;
 
 public class LongestBalancedParenthesis {
+
     /*
     Longest Balanced - Takes in a string of parenthesis and finds the longest set of balanced (valid) parenthesis -
     Return the longest set -
@@ -11,6 +12,7 @@ public class LongestBalancedParenthesis {
     ((()() = ()()
     ()(() = ()
     */
+
     public static String longestBalanced(String strArgs) {
         String current = "";
         String result = "";
