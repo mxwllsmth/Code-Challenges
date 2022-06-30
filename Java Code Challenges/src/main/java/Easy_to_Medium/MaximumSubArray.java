@@ -10,7 +10,7 @@ public class MaximumSubArray {
     //  Tested in Easy Tests folder
 
     public int maxSubArray(int[] nums) {
-        int maxValue = nums[0];
+        int maxSum = nums[0];
         int current = 0;
         //  Start loop
         for(int num : nums) {
@@ -20,9 +20,12 @@ public class MaximumSubArray {
             }
             //  Add index to current
             current += num;
-            //  Check if current is higher than maxValue
-            maxValue = Math.max(current, maxValue);
+            //  Check if current is higher than maxSum
+            if(current > maxSum) {
+                maxSum = current;
+            }
         }
-        return maxValue;
+        return maxSum;
     }
+
 }
