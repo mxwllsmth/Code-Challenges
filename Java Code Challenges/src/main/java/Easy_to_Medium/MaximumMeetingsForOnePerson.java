@@ -96,7 +96,7 @@ public class MaximumMeetingsForOnePerson {
         for (int i = 0 ; i < scheduleEndArray.length ; i++) {
             //  Start inner loop
             for (int x = i + 1; x < scheduleEndArray.length ; x++) {
-                //  Swap if value at i is less
+                //  Swap if value at i is greater
                 if(scheduleEndArray[i] > scheduleEndArray[x]) {
                     tempEndVal = scheduleEndArray[i];
                     tempStartVal = scheduleStartArray[i];
