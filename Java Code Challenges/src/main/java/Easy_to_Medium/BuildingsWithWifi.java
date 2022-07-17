@@ -8,7 +8,7 @@ public class BuildingsWithWifi {
     /*
     Buildings with Wifi - Takes in three lists and finds if all buildings are served -
     A building is considered served when the number of routers supporting the building is equal to or greater than the head count of the building
-        'buildingCount' is a head count per building (indexes represent buildings) -
+        'buildingCount' is a head count per building (each value represents a building) -
         'routerLocation' is the building number where a router is located (buildings numbered ascending from 1)
         'routerRange' is connected by index to routerLocation and represents the range of the router (location + & - range ---- inclusive)
     Return the number of served buildings
@@ -66,7 +66,9 @@ public class BuildingsWithWifi {
         }
         //  Loop buildings served array
         for(int i : buildingsServedArray) {
+            //  If the building has a value of 0 or less, it has been served
             if(i <= 0) {
+                //  Count
                 buildingsServed++;
             }
         }
