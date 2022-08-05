@@ -1,6 +1,6 @@
 package Easy_to_Medium;
 
-public class MaximumSubArray {
+public class MaximumSumOfSubArray {
 
     /*
     Maximum Sub Array - Takes in an integer array and finds the sub array whose elements have the greatest sum -
@@ -12,8 +12,15 @@ public class MaximumSubArray {
     public int maxSubArray(int[] nums) {
         int maxSum = nums[0];
         int current = 0;
+        int maxNum = Integer.MIN_VALUE;
+
         //  Start loop
         for(int num : nums) {
+            //  If num is greater than maxNum
+            if(num > maxNum) {
+                //  Update maxNum
+                maxNum = num;
+            }
             //  If current is less than 0, change it to 0
             if(current < 0) {
                 current = 0;
@@ -24,6 +31,11 @@ public class MaximumSubArray {
             if(current > maxSum) {
                 maxSum = current;
             }
+        }
+        //  If maxNum is greater than maxSum
+        if(maxNum > maxSum) {
+            //  Update maxSum
+            maxSum = maxNum;
         }
         return maxSum;
     }
