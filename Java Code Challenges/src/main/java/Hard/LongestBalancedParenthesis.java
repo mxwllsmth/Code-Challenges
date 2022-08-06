@@ -13,7 +13,9 @@ public class LongestBalancedParenthesis {
     ()(() = ()
     */
 
-    public static String longestBalanced(String strArgs) {
+    // Note - not my best work - easy to break with consecutive ((( or ))) between sets of balanced parenthesis
+
+    public String longestBalanced(String strArgs) {
         String current = "";
         String result = "";
         int counter = 0;

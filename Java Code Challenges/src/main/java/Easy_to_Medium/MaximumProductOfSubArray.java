@@ -4,6 +4,13 @@ public class MaximumProductOfSubArray {
 
     public Integer maxProductOfSubArray(int[] nums) {
 
+        /*
+        Maximum Product Of Sub Array - Takes in an integer array and finds the sub array whose elements have the greatest product -
+        Return the greatest product
+        */
+
+        //  Tested in Easy/Medium Tests folder
+
         //Handle empty array
         if(nums.length == 0) {
             return 0;

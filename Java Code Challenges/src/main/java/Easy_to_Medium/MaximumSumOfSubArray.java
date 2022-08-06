@@ -3,7 +3,7 @@ package Easy_to_Medium;
 public class MaximumSumOfSubArray {
 
     /*
-    Maximum Sub Array - Takes in an integer array and finds the sub array whose elements have the greatest sum -
+    Maximum Sum Of Sub Array - Takes in an integer array and finds the sub array whose elements have the greatest sum -
     Return the greatest sum
     */
 

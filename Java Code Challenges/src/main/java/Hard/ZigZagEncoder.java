@@ -1,6 +1,7 @@
 package Hard;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ZigZagEncoder {
@@ -16,12 +17,14 @@ public class ZigZagEncoder {
     : and should return 'Hysemnimloaealmx'
     */
 
-    public static String zigZagEncryption(String message, int rows) {
-        String encoded = "";
+    //  Tested in Hard test folder
+
+    public String zigZagEncryption(String message, int rows) {
+        StringBuilder encoded = new StringBuilder();
         //  Main equation to be used to traverse the message
         int mainEqu = (2 * rows) - 2;
         //  Remove spaces
-        char[] smushArr = message.replaceAll("//s", "").toCharArray();
+        char[] smushArr = message.replaceAll(" ", "").toCharArray();
         //  When rows is greater than 1
         if(rows != 1) {
             //  Start loop
@@ -32,26 +35,28 @@ public class ZigZagEncoder {
                 if (i == 0 || i == rows - 1) {
                     // Start loop and add letter to encoded
                     for (int x = i; x < smushArr.length ; x += mainEqu) {
-                        encoded += smushArr[x];
+                        encoded.append(smushArr[x]);
                     }
                     //  When not at top or bottom row
                 } else if (i % (rows - 1) != 0) {
                     //  Start loop and grab skipped index, then add letter to encoded
                     for (int x = i; x < smushArr.length ; x += mainEqu) {
                         skippedIndex = (x + (mainEqu) - (i * 2));
-                        encoded += smushArr[x];
+                        encoded.append(smushArr[x]);
                         //  Add skipped index to encoded when not out of bounds
                         if (skippedIndex < smushArr.length) {
-                            encoded += smushArr[skippedIndex];
+                            encoded.append(smushArr[skippedIndex]);
                         }
                     }
                 }
             }
         } else {
             //  Return original message when rows == 1
-            encoded = message;
+            for(char i : smushArr) {
+                encoded.append(i);
+            }
         }
 
-        return encoded;
+        return encoded.toString();
     }
 }
