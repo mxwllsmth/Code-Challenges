@@ -16,11 +16,6 @@ public class MaximumSumOfSubArray {
 
         //  Start loop
         for(int num : nums) {
-            //  If num is greater than maxNum
-            if(num > maxNum) {
-                //  Update maxNum
-                maxNum = num;
-            }
             //  If current is less than 0, change it to 0
             if(current < 0) {
                 current = 0;
@@ -31,11 +26,6 @@ public class MaximumSumOfSubArray {
             if(current > maxSum) {
                 maxSum = current;
             }
-        }
-        //  If maxNum is greater than maxSum
-        if(maxNum > maxSum) {
-            //  Update maxSum
-            maxSum = maxNum;
         }
         return maxSum;
     }

@@ -128,10 +128,8 @@ public class NavigateFileSystem {
                                 }
                             //  If path list has only 1
                             } else {
-                                while(!pathList.isEmpty()) {
-                                    pathList.remove(pathList.size() - 1);
-                                    indexPath.pop();
-                                }
+                                pathList.remove(pathList.size() - 1);
+                                indexPath.pop();
                             }
                         }
                     }

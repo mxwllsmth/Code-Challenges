@@ -28,16 +28,12 @@ public class MaximumSumOfSubArrayTest {
         int actual2 = msa.maxSubArray(new int[] {-4,-1,-5,-2,-1});
         int expected2 = -1;
 
-        Assert.assertEquals(expected, actual);
-        Assert.assertEquals(expected2, actual2);
-    }
-    //  Get maximum sum from sub array with all negative values
-    @Test
-    public void getMaxSumFromSubArrayAllNegatives() {
-        int actual = msa.maxSubArray(new int[] {-2,-1,-3,-4,-1,-2,-1,-5,-4});
-        int expected = -1;
+        int actual3 = msa.maxSubArray(new int[] {-2,-1,-3,-4,-1,-2,-1,-5,-4});
+        int expected3 = -1;
 
         Assert.assertEquals(expected, actual);
+        Assert.assertEquals(expected2, actual2);
+        Assert.assertEquals(expected3, actual3);
     }
 
 }
