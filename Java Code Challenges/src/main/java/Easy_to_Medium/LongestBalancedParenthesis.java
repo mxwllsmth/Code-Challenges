@@ -1,20 +1,74 @@
-package Hard;
+package Easy_to_Medium;
 
 public class LongestBalancedParenthesis {
 
     /*
-    Longest Balanced - Takes in a string of parenthesis and finds the longest set of balanced (valid) parenthesis -
+    Longest Balanced Parenthesis - Takes in a string of parenthesis - only '(' and ')' - and finds the longest set of balanced (valid) parenthesis -
     Return the longest set -
-    )(())) = (())
-    ())()()(()) = ()()(())
-    )( = ""
-    ((()) = (())
-    ((()() = ()()
-    ()(() = ()
     */
 
-    // Note - not my best work - easy to break with consecutive ((( or ))) between sets of balanced parenthesis
+    //  Tested in Easy test folder
 
+    public String getLongestSetOfBalancedParenthesis(String strArgs) {
+        String longest = "";
+        StringBuilder current = new StringBuilder();
+        int count = 0;
+
+        //  Start loop
+        for(int i = 0 ; i < strArgs.length() ; i++) {
+            //  Reset current and count for each outer loop pass
+            current = new StringBuilder(String.valueOf(strArgs.charAt(i)));
+            count = 0;
+            //  If right symbol, decrement counter
+            if(strArgs.charAt(i) == ')') {
+                count--;
+            //  If left symbol, increment counter
+            } else {
+                count++;
+            }
+            //  If count drops under 0, STOP
+            if(count < 0) {
+                continue;
+            }
+            //  Start inner loop from the next char
+            for(int x = i + 1 ; x < strArgs.length() ; x++) {
+                //  If right symbol, decrement counter
+                if(strArgs.charAt(x) == ')') {
+                    count--;
+                    //  If count is greater than or equal to 0, add symbol to current
+                    if(count >= 0) {
+                        current.append(')');
+                    //  If count is under 0, STOP
+                    } else {
+                        break;
+                    }
+                //  If left symbol, increment counter and symbol to current
+                } else {
+                    count++;
+                    current.append('(');
+                }
+                //  If count is equal to 0 AND the length of 'current' is greater than 'longest', update 'longest' to 'current'
+                if(count == 0 && current.length() > longest.length()) {
+                    longest = current.toString();
+                }
+            }
+        }
+        return longest;
+    }
+
+
+
+
+    /*
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    Just keeping this in here for fun :)
+    This was my original solution to the problem... haha
+
+    The code works for a good amount of cases, but can be easily broken with repeating '(' or ')' a couple of times
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    */
     public String longestBalanced(String strArgs) {
         String current = "";
         String result = "";
