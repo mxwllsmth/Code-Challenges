@@ -50,7 +50,7 @@ public class BuildingsWithWifi {
                 //  Subtract 1 from each building in range
                 buildingsServedArray[index] -= 1;
                 //  Check if building count <= 0 AND has not already been counted
-                if(buildingsServedArray[index] == 0 && !isBuildingServedArray[index]) {
+                if(buildingsServedArray[index] <= 0 && !isBuildingServedArray[index]) {
                     //  Count and set to true
                     buildingsServed++;
                     isBuildingServedArray[index] = true;
